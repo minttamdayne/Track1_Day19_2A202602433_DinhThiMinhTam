@@ -1,7 +1,7 @@
 # Group Feedback Synthesis — AI Tutor Diagnostic Refresher
 
 - **Nhóm:** Nhóm 2A — Case A: Diagnostic Refresher
-- **Thành viên nhóm:** Phạm Thành Đạt (Lead & Facilitator Session 1), Thành viên 2 (Facilitator Session 2), Thành viên 3 (Facilitator Session 3).
+- **Thành viên nhóm:** Phạm Thành Đạt (Lead & Facilitator Session 1), Đinh Thị Minh Tâm (Facilitator Session 2), Bùi Thị Ngọc Trân (Facilitator Session 3).
 - **Nội dung thử nghiệm chung:** Bài 4: Xây dựng RAG Agent cơ bản với LangChain — VectorStore Indexing (Embedding Dimension & Cosine Similarity).
 - **Tổng số phiên thử nghiệm:** 3 phiên độc lập với 3 tester ngoài nhóm hoàn toàn khác nhau về nền tảng chuyên môn.
 
@@ -9,7 +9,7 @@
 
 ## 1. Dữ liệu tổng hợp từ 3 Phiên Thử Nghiệm
 
-| Thông tin phiên | Phiên 1 (Phạm Thành Đạt facilitate) | Phiên 2 (Thành viên 2 facilitate) | Phiên 3 (Thành viên 3 facilitate) |
+| Thông tin phiên | Phiên 1 (Phạm Thành Đạt facilitate) | Phiên 2 (Đinh Thị Minh Tâm facilitate) | Phiên 3 (Bùi Thị Ngọc Trân facilitate) |
 | :--- | :--- | :--- | :--- |
 | **Tester ngoài nhóm** | **Nguyễn Hoàng Nam** (26 tuổi, Backend Engineer đang học AI) | **Nguyễn Thu Thảo** (22 tuổi, Sinh viên năm cuối ngành Hệ thống thông tin) | **Lê Minh Trí** (24 tuổi, Data / Business Analyst học AI thực chiến) |
 | **Hành vi nổi bật** | Ưa chuộng Option B; tự duyệt checklist và đọc micro-lesson 1536 chiều; đánh giá cao việc không bị AI ép làm quiz. | Thích nhất Option C vì ví dụ tương phản A vs B chỉ trúng điểm nhầm lẫn giữa Token Count và Dimension; an tâm vì có nút gửi Trợ giảng. | Thích Option A vì tính chất xác thực khách quan; cảm thấy quiz 2 câu giúp tự tin rằng mình đã hiểu đúng thuật toán Cosine. |

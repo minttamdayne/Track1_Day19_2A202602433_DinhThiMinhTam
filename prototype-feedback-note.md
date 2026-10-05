@@ -1,60 +1,13 @@
-# Prototype Feedback Note — Phiên Thử Nghiệm Cá Nhân
+# Phiếu Ghi Nhận Phản Hồi Cá Nhân (Prototype Feedback Note)
 
-- **Người điều phối (Facilitator):** Phạm Thành Đạt (MHV: 2A202602721)
-- **Người tham gia thử nghiệm (Tester ngoài nhóm):** Nguyễn Hoàng Nam (26 tuổi — Backend Engineer đang học chuyển tiếp AI/ML, không thuộc nhóm làm dự án)
-- **Thời gian & Hình thức:** 10:15 - 10:45 AM, Phiên trực tiếp kết hợp quan sát màn hình tương tác.
-- **Kịch bản thực hiện:** Tester thực hiện toàn bộ quy trình trên bài tập LangChain RAG Indexing (Embedding Dimension & Cosine Similarity) mà không có sự giải thích hay can thiệp trước từ Facilitator (Gate 4 compliance).
+**Họ tên người phỏng vấn:** Đinh Thị Minh Tâm (MHV: 2A202602433) · **Tester / Bối cảnh:** Nguyễn Thu Thảo (22 tuổi, sinh viên năm cuối ngành Hệ thống thông tin), thử nghiệm ba phương án hỗ trợ A/B/C trong Bài 4: Xây dựng RAG Agent cơ bản với LangChain, tại bước VectorStore Indexing với hai khái niệm Embedding Dimension và Cosine Similarity.
 
----
-
-## 1. Nhật ký Quan sát chi tiết theo từng Phương án
-
-### Option A: Diagnostic Refresher (AI-Led mini-quiz 2 câu)
-- **Hành vi quan sát được:**
-  - Sau khi bấm "Tôi vẫn chưa hiểu", tester đọc ngay dòng kỳ vọng: *"AI sẽ đặt 2 câu hỏi trắc nghiệm nhanh để tìm lỗ hổng trong 60s"*.
-  - Tester mất khoảng 20 giây để chọn đáp án Câu 1 (chọn phương án B: số lượng tọa độ toán học). Ở Câu 2 (Cosine Similarity), tester đọc nhanh và chọn phương án A (đo góc giữa 2 vector).
-  - Sau khi bấm nộp bài, Refresher Card hiện ra. Tester dừng lại đọc đoạn tóm tắt và gật đầu đồng ý.
-- **Phát biểu thành tiếng (Exact Quotes):**
-  - *"Lúc đầu tôi hơi khựng lại vì nghĩ 'Đang làm bài tập tự nhiên lại bắt làm trắc nghiệm nữa?'. Nhưng 2 câu này hỏi trúng ngay rào cản phân biệt giữa số từ và số chiều, nên làm xong tôi cảm thấy rất tự tin."*
-  - *"Thẻ tóm tắt 60s rất cô đọng, có cả công thức hình học trực quan."*
-- **Sử dụng quyền kiểm soát (Human Control):**
-  - Tester nhìn thấy nút *"Bỏ qua chẩn đoán, quay lại bài"* và ghi nhận đây là đường thoát tốt nếu người học đang vội.
-  - Sau khi đọc xong, tester bấm nút *"Đã hiểu! Quay lại bài học"* và trở về đúng màn hình code.
-
----
-
-### Option B: Knowledge Checklist (User-Led drawer phân rã kiến thức)
-- **Hành vi quan sát được:**
-  - Tester mở drawer "Mắt xích kiến thức nền bài này". Mắt xích đầu tiên đang được tick chọn mặc định.
-  - Tester tò mò bấm vào Mắt xích 2 (`[ ] Vector Dimension (1536 chiều là gì?)`) và Mắt xích 3 (`[ ] Cosine Similarity tính thế nào?`). Nội dung micro-lesson bên dưới lập tức đổi tương ứng.
-  - Tester đọc phần ELI5 Visual Guide giải thích về việc vector luôn cố định chiều bất kể độ dài văn bản.
-- **Phát biểu thành tiếng (Exact Quotes):**
-  - *"Phương án này cho tôi cảm giác hoàn toàn làm chủ! Tôi không thích bị máy hỏi bài, tôi thích tự mở bảng mục lục kiến thức nền để xem mình đang quên chỗ nào."*
-  - *"Phần giải thích ví dụ từ 'Vua' với 'Hoàng hậu' rất trực quan, dân mới học đọc vào là hiểu ngay bản chất vector embedding."*
-- **Sử dụng quyền kiểm soát (Human Control):**
-  - Tester thử bỏ tick và tick lại các mục; kiểm tra nút *"Mở bài giảng gốc trong giáo trình"* và nút *"Đóng drawer"* hoạt động nhanh chóng.
-
----
-
-### Option C: A/B Contrast & Escalation (Đối chiếu cách hiểu & Kết nối Mentor)
-- **Hành vi quan sát được:**
-  - Tester đọc 2 kịch bản tương phản và bật cười khi thấy Cách hiểu A: *"Ủa cái này đúng là cái tôi từng nghĩ hồi mới học NLP này, tưởng 1536 từ!"*.
-  - Tester bấm chọn Cách hiểu B, hệ thống hiển thị xác nhận và phân tích điểm khác biệt giữa Token Count và Embedding Dimension.
-  - Tester xem qua phần Escalation và bấm thử nút *"Gửi ticket hỗ trợ 1-1 cho Trợ giảng"*. Khi hộp thoại xác nhận hiện ra liệt kê đúng bài học và mã nguồn liên quan, tester ấn hủy để test tính năng phục hồi.
-- **Phát biểu thành tiếng (Exact Quotes):**
-  - *"Cách tiếp cận tương phản A vs B này cực kỳ hiệu quả để trị bệnh ngộ nhận! Nhiều khi học viên không biết mình hiểu sai cho đến khi nhìn thấy câu ngộ nhận viết rành rành ra đó."*
-  - *"Có nút gửi Trợ giảng kèm tóm tắt context là một 'lưới an toàn' tâm lý rất tốt cho học viên non-tech."*
-- **Sử dụng quyền kiểm soát (Human Control):**
-  - Tester xác nhận luồng preview ticket trước khi gửi giúp người học hoàn toàn kiểm soát việc chia sẻ dữ liệu với Mentor.
-
----
-
-## 2. Đánh giá So sánh từ Tester (Tester Synthesis)
-- **Xếp hạng mức độ ưa thích:** Option B (Checklist) > Option C (A/B Contrast) > Option A (Quiz).
-- **Lý do:** Tester đánh giá cao **sự chủ động (User Agency)** của Option B và **tính phản biện nhận thức (Cognitive Impact)** của Option C; trong khi Option A dù chẩn đoán chính xác nhưng vẫn mang tính "ép buộc thi cử".
-
----
-
-## 3. Bài học & Thay đổi đề xuất từ phiên điều phối (Facilitator Takeaways)
-1. **Next Change cụ thể:** Kết hợp ưu điểm của Option B và Option C thành một luồng thống nhất: Giao diện hiển thị Knowledge Checklist (Option B), nhưng khi click vào từng mắt xích, hiển thị nội dung dạng đối chiếu ngộ nhận A vs B (Option C) để tăng độ sâu tiếp thu.
-2. **Still Unproven:** Liệu học viên non-tech khi tự duyệt checklist (Option B) có khả năng tự nhận biết chính xác mắt xích mình đang yếu hay sẽ tick bừa nếu gặp quá nhiều thuật ngữ kỹ thuật mới?
+| **Tiêu điểm quan sát hành vi** | **Ghi chép chi tiết hành vi thực tế (Fact-First)** |
+| :--- | :--- |
+| **First Action (Hành động đầu tiên):** Tester bấm vào đâu, nhìn vào đâu đầu tiên? | Chưa có ghi chép riêng xác nhận vị trí Thu Thảo nhìn hoặc nút bấm đầu tiên. Cần bổ sung từ ghi chép phiên do Minh Tâm điều phối. |
+| **Hesitation (Điểm do dự, dừng lại hoặc hiểu sai):** Chỗ nào khiến tester lúng túng hoặc hiểu lầm? | Theo tổng hợp nhóm, Thu Thảo cảm thấy quiz của Option A giống kiểm tra bài cũ, tạo thêm áp lực khi đang căng thẳng vì bài thực hành. Ví dụ tương phản của Option C được đánh giá tích cực vì làm rõ điểm nhầm lẫn giữa Token Count và Embedding Dimension. Chưa có ghi nhận thời điểm dừng, thời gian do dự hoặc đáp án Thảo đã chọn. |
+| **Evidence Checking (Minh chứng được đọc hay bỏ qua):** Tester có kiểm tra nguồn trích dẫn / cảnh báo không? | Chưa có ghi chép riêng xác nhận Thu Thảo đã đọc hay bỏ qua nguồn bài học, căn cứ chẩn đoán hoặc cảnh báo. Việc Thảo đánh giá cao ví dụ A/B chưa đủ để kết luận đã kiểm tra nguồn minh chứng. |
+| **Control & Recovery (Cách sửa sai hoặc lấy lại quyền kiểm soát):** Tester dùng nút nào để khắc phục khi thấy kết quả chưa ưng ý? | Theo tổng hợp nhóm, nút kết nối Trợ giảng ở Option C tạo cảm giác an tâm cho Thu Thảo. Chưa có ghi chép riêng xác nhận Thảo đã dùng nút bỏ qua quiz, đóng drawer, quay lại bài học, xem trước hoặc hủy ticket. Chưa kiểm chứng gửi ticket thực tế và phản hồi của Trợ giảng. |
+| **Selected Option (Phương án được tester lựa chọn):** | **Option C — A/B Contrast & Escalation.** Xếp hạng mức độ ưa thích theo tổng hợp nhóm: **C > B > A**. |
+| **Trade-offs (Lý do chọn và sự đánh đổi chấp nhận):** Tester sẵn sàng hy sinh điều gì để chọn phương án này? | **Lý do chọn đã ghi nhận:** Ví dụ đối chiếu A/B giúp làm rõ ngộ nhận; đường kết nối Trợ giảng tạo cảm giác an tâm. **Sự đánh đổi chưa được xác nhận:** Chưa có phản hồi cụ thể về việc Thảo chấp nhận thêm thao tác, chờ Trợ giảng hoặc chia sẻ ngữ cảnh bài tập để nhận hỗ trợ. |
+| **Counter-evidence (Dữ kiện đi ngược lại kỳ vọng ban đầu của nhóm):** Có phát hiện nào bất ngờ làm nhóm 'vỡ mộng'? | Phản hồi về Option A cho thấy quiz ngắn vẫn có thể tăng áp lực thay vì giúp người học thoải mái tiếp tục bài. Đây là tín hiệu thách thức kỳ vọng thiết kế rằng chẩn đoán nhanh sẽ khôi phục sự tự tin; chưa có ghi chép xác nhận đây là phát hiện bất ngờ đối với nhóm. Việc Thảo ưu tiên C chưa chứng minh C giúp hiểu bài nhanh hơn hoặc hoàn thành bài tập tốt hơn. |

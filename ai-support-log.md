@@ -1,54 +1,41 @@
 # AI Support Log — Nhật Ký Hỗ Trợ Của AI & Phản Biện Con Người
 
-- **Học viên:** Phạm Thành Đạt (MHV: 2A202602721)
-- **Học phần:** VinUni AIA Track 1 — Day 18 Lab (Diagnostic Refresher Prototype)
-- **Mô hình AI sử dụng:** Gemini 3.8 Flash / Antigravity Assistant
+- **Học viên:** Đinh Thị Minh Tâm (MHV: 2A202602433)
+- **Dự án:** VLearn — AI Tutor: Diagnostic Refresher, Three Prototypes, One Next Change
+- **Hồ sơ:** Track1_Day19_2A202602433_DinhThiMinhTam
+- **Công cụ AI trong phiên chỉnh sửa tài liệu:** Codex
+- **Phạm vi ghi nhận:** Rà soát và chỉnh sửa tài liệu cá nhân, README và phiếu phản hồi cho phiên Minh Tâm phỏng vấn Nguyễn Thu Thảo. Nhật ký này ghi nhận công việc trong cuộc trao đổi hiện tại; không quy toàn bộ công việc kỹ thuật của nhóm thành đóng góp cá nhân của Minh Tâm.
 
 ---
 
 ## 1. AI Đã Giúp Được Những Gì? (AI Contributions)
 
-1. **Kế thừa & Tự động hóa hệ thống ghi nhận AI Log:**
-   - Di chuyển và kế thừa toàn bộ hệ thống `.ai_log` hook từ Day 16, tự động tối ưu hóa đường dẫn tìm kiếm `transcript.jsonl` tương thích với các profile máy trạm (`agy_worker_4`).
-   - Cung cấp test suite bash (`scripts/test_ai_log_hook.sh`) kiểm thử tự động 4 kịch bản payload, tiếng Việt Unicode và cấu trúc JSON.
+- Đọc và đối chiếu tài liệu Markdown của dự án để xác định bối cảnh LangChain RAG Indexing, cơ chế của Option A/B/C và phản hồi được ghi trong tài liệu tổng hợp nhóm.
+- Chỉnh [prototype-feedback-note.md](prototype-feedback-note.md) theo thông tin Minh Tâm xác nhận: tester là Nguyễn Thu Thảo, 22 tuổi, sinh viên năm cuối ngành Hệ thống thông tin.
+- Soạn lại phần Observation trong [README.md](README.md), thống nhất xếp hạng của Thu Thảo là **Option C > Option B > Option A** theo tài liệu tổng hợp nhóm.
+- Chuyển phiếu phản hồi sang mẫu **hai cột, bảy tiêu điểm** do Minh Tâm cung cấp: First Action, Hesitation, Evidence Checking, Control & Recovery, Selected Option, Trade-offs và Counter-evidence.
+- Phân biệt phản hồi đã có với dữ liệu còn thiếu, tránh biến mô tả tính năng prototype thành hành vi thực tế của tester.
 
-2. **Tìm kiếm & Cài đặt bộ Skills chuyên sâu:**
-   - Tra cứu và tích hợp các kỹ năng tiêu chuẩn cao từ Matt Pocock (`wayfinder`, `prototype`) và bộ kỹ năng giao diện & BA (`minimalist-ui`, `stitch-design-taste`, `design-taste-frontend`, `ask-why-ba`, `user-story-ac-writer`, `use-case-writer`).
+## 2. AI Đã Sai Hoặc Còn Hạn Chế Ở Đâu? (AI Flaws & Limitations)
 
-3. **Hiện thực hóa Nhanh Bộ Prototype Tương Tác Đa Phương Án:**
-   - Viết trọn vẹn bộ testbed HTML/JS độc lập ([`prototypes/index.html`](file:///home/dat/dev/vinuni_aia/Track1_Day18_2A202602721/prototypes/index.html)) mô phỏng chân thực bài học LangChain RAG Indexing (Embedding Dimension & Cosine Similarity) và cả 3 cơ chế hỗ trợ A/B/C với đầy đủ trạng thái tương tác.
+- **Tài liệu kế thừa chưa đúng chủ thể:** Bản AI Support Log trước ghi tên Phạm Thành Đạt, mã học viên 2A202602721 và các công việc như xây dựng testbed, cài skills, cấu hình hook. Các nội dung này chưa có căn cứ để ghi là đóng góp của Minh Tâm.
+- **Thông tin tester thay đổi giữa các bản:** Bản phiếu trước mô tả phiên Minh Trí và chứa trích dẫn, thao tác chi tiết của phiên đó. Khi chuyển sang Thu Thảo, các chi tiết này không thể được giữ rồi gán cho người mới.
+- **Thiếu bằng chứng hành vi riêng:** Tài liệu tổng hợp nhóm có xếp hạng và nhận xét của Thu Thảo, nhưng chưa có ghi chép riêng về nút bấm đầu tiên, thời gian do dự, việc đọc nguồn hoặc thao tác gửi/hủy ticket. AI có thể hỗ trợ diễn giải tài liệu, chưa thể xác nhận những hành vi này.
+- **Nguy cơ suy rộng quá mức:** Thích Option C không đồng nghĩa với hiểu bài nhanh hơn, tự hoàn thành bài tập hoặc giảm bỏ học. Cảm giác an tâm vì có Trợ giảng cũng chưa chứng minh ticket được gửi hay Trợ giảng phản hồi đúng thời gian.
 
----
+## 3. Minh Tâm Đã Định Hướng & Kiểm Soát Việc Chỉnh Sửa Như Thế Nào? (Human-in-the-Loop)
 
-## 2. AI Đã Sai, Hời Hợt Hoặc Ảo Tưởng Ở Đâu? (AI Flaws & Hallucinations)
+- Yêu cầu AI đọc lại tài liệu và sửa biên bản theo đúng sinh viên điều phối là **Đinh Thị Minh Tâm**.
+- Xác nhận tester chính xác là **Nguyễn Thu Thảo**, 22 tuổi, sinh viên năm cuối ngành Hệ thống thông tin, thay cho Minh Trí ở bản trước.
+- Yêu cầu soạn lại mục Observation của README cho phiên Thu Thảo để thống nhất với hồ sơ cá nhân.
+- Cung cấp mẫu phiếu phản hồi bắt buộc gồm bảy tiêu điểm, đặt trọng tâm vào ghi chép hành vi thực tế (**Fact-First**).
+- Yêu cầu sửa AI Support Log thành nhật ký cá nhân của Minh Tâm. Những dữ liệu thực địa còn thiếu cần được Minh Tâm bổ sung từ ghi chép phiên, không để AI tự tạo lời nói hay hành vi của tester.
 
-1. **Hiểu sai Gate 2 về "Meaningful Options":**
-   - *Biểu hiện của AI:* Ở bản phác thảo ban đầu, AI đề xuất 3 option chỉ khác nhau về hình thức hiển thị giao diện: Option 1 hiển thị dạng Modal pop-up, Option 2 hiển thị Drawer bên phải, Option 3 hiển thị Accordion dưới bài nộp.
-   - *Hậu quả nếu giữ nguyên:* Sẽ bị đánh trượt Gate 2 ngay lập tức vì cả 3 option cùng một cơ chế, chỉ khác giao diện/wording.
+## 4. Kết Quả Kiểm Tra & Những Điểm Còn Chưa Chứng Minh
 
-2. **Vi phạm nguyên tắc Human Control (Gate 3) do thiên vị "AI tự hành động":**
-   - *Biểu hiện của AI:* AI từng gợi ý tính năng tự động nhảy bài học mới hoặc tự sửa code khi user bị sai.
-   - *Vấn đề:* Việc này tước đoạt hoàn toàn quyền tự chủ (Agency) của người học, vi phạm nguyên tắc chỉ chọn cơ chế *Ask* hoặc *Don't Act* tại các thời điểm then chốt.
+- **Đã kiểm tra:** Phiếu phản hồi có đúng hai cột và đủ bảy tiêu điểm; tên tester và xếp hạng thống nhất với bản README đã chỉnh. Kiểm tra `git diff --check` riêng cho phiếu phản hồi đạt.
+- **Cần bổ sung:** Thời gian và hình thức phiên, First Action, thao tác kiểm tra minh chứng, cách phục hồi thực tế, sự đánh đổi Thu Thảo chấp nhận và phát biểu nguyên văn nếu có.
+- **Still Unproven:** Khả năng hoàn thành luồng độc lập (Gate 4), thời gian hiểu bài dưới ba phút, khả năng vận dụng sau khi quay lại bài tập, độ bền ghi nhớ và hiệu quả hỗ trợ từ Trợ giảng thật.
+- **Giới hạn của đợt chỉnh sửa:** Công việc được ghi ở đây là chỉnh tài liệu; chưa thực hiện kiểm thử giao diện hoặc xác minh các tích hợp AI/Mentor đang chạy.
 
-3. **Ảo tưởng kết luận (Overclaiming Evidence) ở Gate 5:**
-   - *Biểu hiện của AI:* Trong bản nháp tổng hợp feedback, AI tự động viết: *"Kết quả 3 tester đã chứng minh giải pháp hoàn toàn giải quyết triệt để vấn đề drop-out của học viên"*.
-   - *Vấn đề:* Đây là lỗi nghiêm trọng mà Gate 5 cảnh báo ("tuyên bố solution đã validated là Dấu hiệu chưa đạt"). Ba phiên thử nghiệm micro-prototype chỉ chứng minh được trải nghiệm tại chỗ, không thể kết luận về hành vi dài hạn.
-
----
-
-## 3. Con Người Đã Tự Phản Biện & Can Thiệp Chỉnh Sửa Như Thế Nào? (Human-in-the-Loop Corrections)
-
-1. **Định hình triệt để 3 cơ chế giải quyết (Chặng 2 — Gate 2):**
-   - Can thiệp loại bỏ sự phân chia theo giao diện; chuẩn hóa 3 cơ chế giải quyết khác biệt:
-     - **Option A (AI-Led):** Chẩn đoán trắc nghiệm tự động & Refresher Card 60s.
-     - **Option B (User-Led):** Cây phân rã kiến thức nền (Knowledge Checklist) cho người học tự tick chọn và xem micro-lesson.
-     - **Option C (Co-create & Human):** Đối chiếu tương phản tư duy A vs B kết hợp luồng chuyển giao ticket cho Trợ giảng thật.
-
-2. **Thiết kế nghiêm ngặt Bảng Quyết Định Human-AI (Chặng 3 — Gate 3):**
-   - Thiết lập các nguyên tắc:
-     - Phân định rõ AI Act / Ask / Don't Act (Option A: Ask qua quiz; Option B: Don't Act thụ động; Option C: Ask xác nhận A/B và gửi ticket).
-     - Bổ sung chỉ số bằng chứng (68% ngộ nhận, nguồn Bài 2 giáo trình).
-     - Đảm bảo đường thoát hiểm tức thì (nút đóng drawer, bỏ qua quiz, hủy gửi ticket) không làm mất dữ liệu bài học.
-
-3. **Kiểm soát tính trung thực của kết luận (Gate 5):**
-   - Gạt bỏ các phát biểu tâng bốc của AI; đưa ra mục **Still Unproven** (Độ bền ghi nhớ dài hạn & Chi phí SLA của Trợ giảng) và một **Group Next Change** khiêm tốn, tích hợp cơ chế lai (Hybrid Flow) bám sát dữ liệu thu thập được từ các tester.
+**Tài liệu đối chiếu:** [README.md](README.md), [prototype-feedback-note.md](prototype-feedback-note.md), [group-feedback-synthesis.md](group-feedback-synthesis.md) và [three-option-design-sheet.md](three-option-design-sheet.md).
