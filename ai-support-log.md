@@ -18,7 +18,6 @@
 
 ## 2. AI Đã Sai Hoặc Còn Hạn Chế Ở Đâu? (AI Flaws & Limitations)
 
-- **Tài liệu kế thừa chưa đúng chủ thể:** Bản AI Support Log trước ghi tên Phạm Thành Đạt, mã học viên 2A202602721 và các công việc như xây dựng testbed, cài skills, cấu hình hook. Các nội dung này chưa có căn cứ để ghi là đóng góp của Minh Tâm.
 - **Thông tin tester thay đổi giữa các bản:** Bản phiếu trước mô tả phiên Minh Trí và chứa trích dẫn, thao tác chi tiết của phiên đó. Khi chuyển sang Thu Thảo, các chi tiết này không thể được giữ rồi gán cho người mới.
 - **Thiếu bằng chứng hành vi riêng:** Tài liệu tổng hợp nhóm có xếp hạng và nhận xét của Thu Thảo, nhưng chưa có ghi chép riêng về nút bấm đầu tiên, thời gian do dự, việc đọc nguồn hoặc thao tác gửi/hủy ticket. AI có thể hỗ trợ diễn giải tài liệu, chưa thể xác nhận những hành vi này.
 - **Nguy cơ suy rộng quá mức:** Thích Option C không đồng nghĩa với hiểu bài nhanh hơn, tự hoàn thành bài tập hoặc giảm bỏ học. Cảm giác an tâm vì có Trợ giảng cũng chưa chứng minh ticket được gửi hay Trợ giảng phản hồi đúng thời gian.
